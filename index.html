@@ -13,10 +13,11 @@
 <body>
 
 <style>
-	
+
 	.container {
 		text-align: center;
 	}
+
 	section {
 		background-image: url(typewriter-2.jpg);
 		background-size: cover;
@@ -32,7 +33,8 @@
 		padding: 5px;
 	}
 
-	h1, h2 {
+	h1 {
+		line-height: 40px;
 		color: #FFF;
 	}
 
@@ -41,7 +43,7 @@
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-		text-align: center;
+		padding: 20px 0;
 	}
 
 	.brand__name {
@@ -59,6 +61,7 @@
 		left: 0;
 		top: 15px;
 		transition: color 0.3s ease;
+		font-size: 18px;
 	}
 
 	.shadow:hover {
@@ -83,19 +86,48 @@
 		margin-right: 12px;
 	}
 
+	.row-change {
+		margin: 0;
+	}
+
+	.clearfix {
+		overflow: hidden;
+	}
+
+	@media (max-width: 480px) {
+
+		h1 {
+			font-size: 25px;
+		}
+
+		.btn-back {
+			top: -5px;
+			font-size: 15px;
+		}
+		.brand__name {
+			font-size: 20px;
+		}
+	}
 </style>
 
 	<section>
-		<div class="container">
+		<div class="container clearfix">
 			<div class="title">
-				<h1>We try to answer as quickly as possible.</h1>
+				<h1>Thank you!<br>We try to answer as quickly as possible.</h1>
 			</div>
-			
-		</div>
-		<div class="brand">
-			<a href="index.html" type="button" class="btn btn-back shadow">Back to site</a>
-			<a href="index.html" class="brand__name">MealWaterLab</a>
-		</div>
+		</div>	
+		
+			<div class="brand">
+				<div class="row row-change">
+					<div class="col-xs-6 col-sm-2">
+						<a href="index.html" type="button" class="btn btn-back shadow">Back to site</a>
+					</div>
+					<div class="col-xs-6 col-sm-10 text-right">
+						<a href="index.html" class="brand__name">MealWaterLab</a>
+					</div>
+				</div>
+			</div>
+		
 	</section>
 </body>
 </html>
