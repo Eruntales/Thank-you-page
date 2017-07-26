@@ -11,6 +11,7 @@
 	<title>Thank you!</title>
 </head>
 <body>
+
 <style>
 	
 	.container {
@@ -42,15 +43,58 @@
 		width: 100%;
 		text-align: center;
 	}
+
+	.brand__name {
+		font-size: 44px;
+	}
+
+	.brand__name:hover {
+		color: #fff !important;
+	}
+
+	.btn-back {
+		background: transparent;
+		color: #fff;
+		position: absolute;
+		left: 0;
+		top: 15px;
+		transition: color 0.3s ease;
+	}
+
+	.shadow:hover {
+		-webkit-box-shadow: 2px 2px 2px 2px #fff;
+		        box-shadow: 2px 2px 2px 2px #fff;
+	    background-color: rgba(255,255,255,0.2);
+	}
+
+	.btn-back:hover, .btn-back:active, .btn-back:focus {
+		color: #fff !important;
+		font-weight: 600;
+	}
+
+	.btn-back::before {
+		content: '';
+		background-image: url(arrow-prev.png);
+		height: 30px;
+		width: 30px;
+		display: inline-block;
+		vertical-align: middle;
+		background-size: 30px 30px;
+		margin-right: 12px;
+	}
+
 </style>
+
 	<section>
 		<div class="container">
 			<div class="title">
 				<h1>We try to answer as quickly as possible.</h1>
 			</div>
+			
 		</div>
 		<div class="brand">
-			<h2>MealWaterLab</h2>
+			<a href="index.html" type="button" class="btn btn-back shadow">Back to site</a>
+			<a href="index.html" class="brand__name">MealWaterLab</a>
 		</div>
 	</section>
 </body>
