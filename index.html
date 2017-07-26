@@ -14,14 +14,15 @@
 
 <style>
 	
-	section {
-		background-image: url(typewriter-2.jpg);
-		height: 100vh;
-		background-size: cover;
-	}
-	
 	.container {
 		text-align: center;
+	}
+	section {
+		background-image: url(typewriter-2.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 100vh;
+		position: relative;
 	}
 
 	.title {
@@ -31,16 +32,30 @@
 		padding: 5px;
 	}
 
-	h1 {
+	h1, h2 {
 		color: #FFF;
+	}
+
+	.brand {
+		background: rgb(0,0,0,0.3);
+		position: absolute;
+		bottom: 0;
+		width: inherit;
+		text-align: center;
 	}
 
 </style>
 
 	<section>
 		<div class="container">
-			<div class="title"><h1>We try to answer as quickly as possible.</h1></div>
+			<div class="title">
+				<h1>We try to answer as quickly as possible.</h1>
+			</div>
+			
 		</div>
+		<div class="brand">
+				<h2>MealWaterLab</h2>
+			</div>
 	</section>
 </body>
 </html>
